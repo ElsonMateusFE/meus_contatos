@@ -51,7 +51,7 @@ export const Tag = styled.span<TagProps>`
   display: inline-block;
 `
 
-export const Descricao = styled.textarea`
+export const Descricao = styled.input`
   color: #8b8b8b;
   font-size: 16px;
   line-height: 20px;
@@ -59,6 +59,7 @@ export const Descricao = styled.textarea`
   display: block;
   width: 100%;
   margin-top: 20px;
+  margin-bottom: 6px;
   resize: none;
   border: none;
   background-color: transparent;

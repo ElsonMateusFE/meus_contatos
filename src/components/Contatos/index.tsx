@@ -60,12 +60,14 @@ const Contatos = ({
         {status}
       </S.Tag>
       <S.Descricao
+        type="email"
         disabled={!estaEditando}
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       />
       <S.BarraAcoes />
       <S.Descricao
+        type="tel"
         disabled={!estaEditando}
         value={telefone}
         onChange={(e) => setTelefone(e.target.value)}
@@ -85,6 +87,7 @@ const Contatos = ({
                     id
                   })
                 )
+                setEstaEditando(false)
               }}
             >
               Salvar
